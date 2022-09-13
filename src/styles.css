@@ -1,0 +1,35 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+.Nav {
+  display: flex;
+  flex-direction: row;
+  background-color: dodgerblue;
+  height: 70px;
+}
+.body {
+  min-height: calc(100vh - 90px);
+  display: flex;
+}
+
+.sidebar {
+  min-width: 300px;
+  background-color: silver;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+}
+.inner-text {
+  font-weight: 700;
+  font-size: 24px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+}
